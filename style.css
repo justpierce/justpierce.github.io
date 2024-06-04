@@ -2,7 +2,7 @@ body {
     background: #886593;
     color: rgb(41, 34, 40);
     padding: 10px;
-    font-family: arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #all-contents {
   max-width: 800px;
@@ -13,8 +13,10 @@ body {
 nav {
     background: rgb(226,62,100);
    margin: 0 auto;
+   margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-radius: 6% 94% 14% 86% / 85% 13% 87% 15%  ;
 }
 h1 {
     display: flex;
@@ -39,13 +41,15 @@ a {
 main {
     background: rgb(160,160,162);
     display: flex;
+    border-radius:93% 7% 100% 0% / 4% 92% 8% 96%       ;
 }
 .sidebar {
     margin-right: 25px;
     padding: 10px;
 }
 .sidebar-img {
-    width: 200px;
+    width: 300px;
+    
 }
 .content {
     flex: 1;
@@ -59,4 +63,29 @@ main {
 }
 h2, h3 {
     margin: 0px;
+}
+/* portfolio styles */
+.content h1 {
+    color: black;
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #eee;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #454545;
 }
