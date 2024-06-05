@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+   for (let i = 100; i < canvas.width; i += 100) {
+     createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,7 +43,18 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
+    createPlatform(300,640,100,30)
+    createPlatform(500,660,100,30)
+    createPlatform(700,530,100,30)
+    createPlatform(500,490,100,30)
+    createPlatform(700,380,100,30)
+    createPlatform(700,250,100,30)
+    createPlatform(1000,250,100,30)
+    createPlatform(1100,530,200,30)
+    createPlatform(1300,670,100,30)
+    createPlatform(1100,560,50,190)
+    
+   
 
 
     
@@ -52,6 +63,9 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
+    createCollectable('gem', 300, 500, 0.1, 1)
+    createCollectable('ruby', 725, 150, 0.1, 1)
+    createCollectable('saphire', 1150, 570, 0.1, 1)
 
 
 
@@ -61,6 +75,9 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+    createCannon("right", 615, 2000, 50, 50)
+    createCannon("bottom", 620, 3000, 50, 50)
+    createCannon("left", 150, 1900, 50, 50)
 
 
 

@@ -97,4 +97,7 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
+  gem: { image: "https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Gemstone_Art_Green_PNG_Clipart.png?m=1585384544"},
+  ruby: { image: "https://pngimg.com/d/ruby_PNG36.png"},
+  saphire: {image: "https://pngimg.com/d/sapphire_PNG21.png"},
 };
