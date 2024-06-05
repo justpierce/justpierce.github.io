@@ -53,6 +53,7 @@ $(function () {
     createPlatform(1100,530,200,30)
     createPlatform(1300,670,100,30)
     createPlatform(1100,560,50,190)
+    createPlatform(1300,170,100,0)
     
    
 
@@ -66,6 +67,7 @@ $(function () {
     createCollectable('gem', 300, 500, 0.1, 1)
     createCollectable('ruby', 725, 150, 0.1, 1)
     createCollectable('saphire', 1150, 570, 0.1, 1)
+    createCollectable('gold', 1320, 90, 0.1, 1)
 
 
 

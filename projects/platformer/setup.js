@@ -100,4 +100,5 @@ var collectableList = {
   gem: { image: "https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Gemstone_Art_Green_PNG_Clipart.png?m=1585384544"},
   ruby: { image: "https://pngimg.com/d/ruby_PNG36.png"},
   saphire: {image: "https://pngimg.com/d/sapphire_PNG21.png"},
+  gold: {image: "https://cdn.pixabay.com/photo/2018/06/20/18/07/gold-3487049_960_720.png"},
 };
