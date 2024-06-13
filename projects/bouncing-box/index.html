@@ -41,6 +41,8 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
+        var boardHeight = board.Height (); //the maximum Y-Coordinate of the screen
+        var boardHeight = jQuery(window).height();
 
         // Every 50 milliseconds, call the update Function (see below)
         setInterval(update, 50);
@@ -66,10 +68,14 @@
         // TODO 2 - Variable declarations
         var positionX = 0;
         var score = 0;
-        var speed = 10;
+        var speedX = 10;
         var positionY = 0;
-        var speedY = -10;
-        var boardHeight = jQuery(window).height();
+        var speedY = 0;
+
+        var randNum = Math.random() * 100;
+        var boardHeight = jQuery(window).height(); 
+
+
         
 
         /* 
@@ -81,13 +87,16 @@
         //We want to increase the value of the varible positionX by 10
 
         function update() {
-          positionX = positionX + speed;
-          moveBoxTo(positionX, positionY);
-          if (positionX > boardWidth) {speed = -speed;}
-          if (positionX < 0) {speed = -speed;}
+          positionX = positionX + speedX;
           positionY = positionY + speedY;
-          if (positionY > boardHeight) {speed = -speed;}
-          if (positionY < 0) {speed = -speed;}
+
+          moveBoxTo(positionX, positionY);
+
+          if (positionX > boardWidth) {speedX = -speedX;}
+          if (positionX <= -50) {speedX = -speedX;}
+
+          if (positionY > boardHeight) {speedY = -speedY;}
+          if (positionY <= 0) {speedY = -speedY;}
           
           
   }
@@ -101,13 +110,18 @@
         function handleBoxClick() {
           positionX = 0;
           positionY = 0;
+
           score = score + 1;
           changeBoxText(score);
-          speed = speed + 2;
+
+          speedX = speedX + 2;
           speedY = speedY + 2;
-          if (speed > 0) {speed = speed + 2;}
-          else if (speed <= 0) {speed = speed - 2;}
+
+          if (speedX > 0) {speedX = speedX + 2;}
+          else if (speedX <= 0) {speedX = speedX - 2;}
           
+          if (speedY > 0) {speedY = speedY + 2;}
+          else if (speedY <= 0) {speedY = speedY - 2;}
         }
       })();
     </script>
